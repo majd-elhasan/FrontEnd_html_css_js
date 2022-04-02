@@ -1,0 +1,23 @@
+#profilePic{
+    float: left;
+    padding-right: 50px;
+    
+}
+h2 {
+    color: rgb(24, 209, 154);
+}
+
+.gray_bg {
+    background-color: gray;
+
+}
+a{
+    text-decoration: none;
+    background-color: khaki;
+}
+a:visited{
+    color: black;
+}
+article{
+    margin-left: 10%;
+}
