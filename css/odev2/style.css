@@ -71,3 +71,11 @@
 .right_div .btn{
     margin-right: 16px;
 }
+footer{
+    margin-top: 120px;
+}
+footer p{
+    text-align: center;
+    clear: both;
+    font-size: 12px;
+}
