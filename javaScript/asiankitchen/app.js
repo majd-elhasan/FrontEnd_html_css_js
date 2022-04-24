@@ -82,6 +82,36 @@ const menu = [
   },
 ];
 
+var btn_func = function(category = "All"){
+  IMC.innerHTML = ""
+
+  menu.forEach(item => {
+    if(item.category == category || category == "All")
+    {
+      img.src = item.img;
+      title_value.innerHTML = item.title;
+      price .innerHTML = item.price;
+      menu_text.innerHTML = item.desc;
+
+      insert_HTML_elements();
+    }
+  })
+};
+/********************** creating the menu buttons Section ***************************/ 
+var categoryArray = ["All","Korea","Japan","China"];
+var createCategoryBtn = function(id){
+  var btn = document.createElement("button");
+  btn.onclick= function(){btn_func(id)}
+  btn.classList =["btn btn-outline-dark btn-item"];
+  btn.id = id;
+  btn.innerHTML = id;
+  document.querySelector("#btn-container").appendChild(btn);
+}
+categoryArray.forEach(itemId => createCategoryBtn(itemId));
+
+/******************* end of creating the menu buttons Section ***********************/
+
+/************************ creating DOM element template *****************************/
 var IMC = document.querySelector("#IMC");
   let main_div = document.createElement("div");
   main_div.classList = ["col-lg-6 col-sm-12 menu-items"];
@@ -95,6 +125,12 @@ var IMC = document.querySelector("#IMC");
     var price = document.createElement("h4");
     price.className="price"
   menu_text = document.createElement("div")
+
+/********************** End of creating DOM element template *************************/
+
+/************************* Distributing DOM elements  *******************************/
+
+
 // <!-- single-item -->
 //           <div class="col-lg-6 col-sm-12 menu-items">
 //             <img src="" alt="">
@@ -120,29 +156,11 @@ var insert_HTML_elements = function(){
 
 }
 
+/********************** End of Distributing DOM elements *************************/
+btn_func("All");
 
-var btn_func = function(category = "all"){
-  IMC.innerHTML = ""
 
-  menu.forEach(item => {
-    if(item.category == category || category == "all")
-    {
-      img.src = item.img;
-      title_value.innerHTML = item.title;
-      price .innerHTML = item.price;
-      menu_text.innerHTML = item.desc;
 
-      insert_HTML_elements();
-    }
-  })
-};
-
-var btn_click =(id)=> btn_func(id);
-
-// document.querySelector("#all").addEventListener("click", () => btn_func());
-// document.querySelector("#Korea").addEventListener("click", () => btn_func("Korea"));
-// document.querySelector("#Japan").addEventListener("click", () => btn_func("Japan"));
-// document.querySelector("#China").addEventListener("click", () => btn_func("China"));
 
 
 
