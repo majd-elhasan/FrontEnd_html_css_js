@@ -27,15 +27,21 @@
           <h2>Asian Kitchen's Menu</h2>
         </div>
         <!-- filter buttons-->
-        <div class="btn-container"></div>
+        <div class="btn-container">
+          <button onclick="btn_click(this.id)" class="btn btn-outline-dark btn-item " id="all"> All</button>
+          <button onclick="btn_click(this.id)" class="btn btn-outline-dark btn-item " id="Korea">Korea</button>
+          <button onclick="btn_click(this.id)" class="btn btn-outline-dark btn-item " id="Japan">Japan</button>
+          <button onclick="btn_click(this.id)" class="btn btn-outline-dark btn-item " id="China">China</button>
+        </div>
+        
         <!-- menu items -->
-        <div class="section-center row">
-          <!-- single-item -->
-
+        <div id="IMC" class="section-center row">
+        <!-- single-item -->
+          
           <!-- end of single item -->
         </div>
       </section>
     </div>
-
+    <script src="app.js"></script>
   </body>
 </html>

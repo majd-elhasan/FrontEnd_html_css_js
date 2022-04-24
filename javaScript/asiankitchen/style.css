@@ -36,13 +36,14 @@ h2 {
   border: 0.25rem solid black;
   border-radius: 10px;
 }
+
 .menu-items {
-  display: flex;
+  display:flex;
   margin: 20px 0;
 }
 .menu-info {
   margin-left: 20px;
-  width: 100%;
+  width: 100%; 
 }
 .menu-title {
   display: flex;
@@ -56,4 +57,7 @@ h4 {
 
 .menu-text {
   padding-top: 20px;
+}
+.price{
+  float: left;
 }
