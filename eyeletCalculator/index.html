@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="rotated orange">
+    <div class="container">
+        <div class="col-1">
+            <img id="setting" src="setting-icon.png" alt="setting">
+            
+        </div>
+        <div class="col-2 input-btn">
+            <a href="#" onclick="activate_WidthField()" class="width"><div class="text">width</div></a>
+            <a href="#" onclick="activate_numberOrDistance()" class="eyelet_num"><div class="text">eyelet_num</div></a>
+        </div>
+        <div class="col-1 input-value">
+            <a class="width-value"><div class="text">200</div></a>
+            <a class="eyelet_num-OrMinimumDistance-value"><div class="text">12</div></a>
+        </div>
+        <div class="col-4 switch-col ">
+            <div class="col-12">
+                <a id="Calc" href="#" onclick="calc_input()" class="offset-3 col-6">          
+                    <div class="text">Calculate</div>
+                </a>
+            </div>
+            <div class="col-12">
+                <div class="col-3 switch-side">Number</div>
+            <div class="col-6">
+                <a href="#" onclick="switcher()" class="switch">
+                    <div id="switch" class="switch-number"></div>
+                </a>
+            </div>
+            <div class="col-3 switch-side">Minimum distance</div>
+            </div>
+        </div>
+        <div class="offset-1 col-3 number_panel">
+            <div class="col-4"><a href="#" onclick="type1()" class="btn"><div class="btn-content">1</div></a></div>
+            <div class="col-4"><a href="#" onclick="type2()" class="btn"><div class="btn-content">2</div></a></div>
+            <div class="col-4"><a href="#" onclick="type3()" class="btn"><div class="btn-content">3</div></a></div>
+            <div class="col-4"><a href="#" onclick="type4()" class="btn"><div class="btn-content">4</div></a></div>
+            <div class="col-4"><a href="#" onclick="type5()" class="btn"><div class="btn-content">5</div></a></div>
+            <div class="col-4"><a href="#" onclick="type6()" class="btn"><div class="btn-content">6</div></a></div>
+            <div class="col-4"><a href="#" onclick="type7()" class="btn"><div class="btn-content">7</div></a></div>
+            <div class="col-4"><a href="#" onclick="type8()" class="btn"><div class="btn-content">8</div></a></div>
+            <div class="col-4"><a href="#" onclick="type9()" class="btn"><div class="btn-content">9</div></a></div>
+            <div class="col-4"><a href="#" onclick="typeX()" class="btn"><div class="btn-content">*</div></a></div>
+            <div class="col-4"><a href="#" onclick="type0()" class="btn"><div class="btn-content">0</div></a></div>
+            <div class="col-4"><a href="#" onclick="Delete()" class="btn"><div class="btn-content">←</div></a></div>
+        </div>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
